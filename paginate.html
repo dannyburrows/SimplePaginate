@@ -1,0 +1,17 @@
+﻿<ul class="pagination">
+    <li ng-class="{disabled: currentPage == 1 }">
+        <a href ng-click="setPage(1)"><<</a>
+    </li>
+    <li ng-class="{disabled: currentPage == 1 }">
+        <a href ng-click="prevPage()"><</a>
+    </li>
+    <li ng-repeat="n in pages" ng-class="{active: n == currentPage}">
+        <a href ng-bind="n" ng-click="setPage(n)"></a>
+    </li>
+    <li ng-class="{disabled: currentPage == pageCount }">
+        <a href ng-click="nextPage()">></a>
+    </li>
+    <li ng-class="{disabled: currentPage == pageCount }">
+        <a href ng-click="setPage(pageCount)">>></a>
+    </li>
+</ul>
