@@ -28,7 +28,7 @@
             scope: {
                 pageCount: '@', // number of pages for the content
                 numPerPage: '@', // number of records per page
-                currentPage: '@', // page that is currently being display
+                currentPage: '@', // page that is currently being displayed
                 navSize: '@', // number of pages to be shown in the list
                 query: '=', // search criteria
                 items: '=', // full list of records to be sent to the directive
